@@ -1,6 +1,6 @@
 function twoSum(nums: number[], target: number): number[] {
 	let indicesSolution = [-1, -1]
-	let leftPointer = 0
+	let leftPointer: number = 0
 	let rightPointer = nums.length - 1;
 	let numsCopy = [...nums];
 
@@ -21,7 +21,7 @@ function twoSum(nums: number[], target: number): number[] {
 	for (let [indX, numb] of nums.entries()) {
 		if ( numb === numsCopy[leftPointer]) {
 			indicesSolution[0] = indX
-			leftPointer = null
+			leftPointer = -1
 		}
 		else {
 			if (numb === numsCopy[rightPointer]) {
