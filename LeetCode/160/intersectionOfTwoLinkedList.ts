@@ -26,7 +26,7 @@ function getIntersectionNode(headA: ListNode | null, headB: ListNode | null): Li
 	currentBNode = headB;
 	greaterLLLength = (linkedListALength > linkedListBLength)?(linkedListALength):(linkedListBLength);
 
-	for (let i = 0 ; (i < greaterLLLength && ((currentANode != null)&&(currentBNode != null))); i++) {
+	for (let i = 0 ; (i < greaterLLLength) && (currentANode != null) && (currentBNode != null); i++) {
 		if (i < Math.abs(linkedListALength - linkedListBLength)) {
 			if (linkedListALength > linkedListBLength) {
 				currentANode = currentANode.next;
