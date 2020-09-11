@@ -11,7 +11,7 @@ var twoSum = (nums, target) => {
 		if (twoSum > target) {
 			rightPointer--			 
 		}
-        else if (twoSum < target) {
+		else if (twoSum < target) {
 			leftPointer++
 		}
 		else {
